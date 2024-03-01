@@ -1,15 +1,12 @@
+from souhaiel import Calculs;
+
+
 def main():
-    
-
-
-
-    # Test de la classe Calculs
-    tableau = [10, 20, 30, 40, 50]
-    print("\nSomme:", Calculs.calculerSomme(tableau))
-    print("Moyenne:", Calculs.calculerMoyenne(tableau))
-
-
-
+    ma_liste = ["a", "b", "c"]
+    calculs_instance = Calculs(ma_liste)
+    calculs_instance.afficher_liste()
+    calculs_instance.modifier_liste(0, "3")
+    calculs_instance.afficher_liste()
 
 if __name__ == "__main__":
     main()
